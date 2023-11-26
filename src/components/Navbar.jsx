@@ -1,7 +1,4 @@
 import {
-  IconBrandDiscord,
-  IconBrandTwitter,
-  IconMenu2,
   IconX,
 } from "@tabler/icons-react";
 import { useState } from "react";
@@ -37,7 +34,7 @@ function Navbar() {
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
           <Link to="/">
-            <p onClick={goTop}>COINDOM</p>
+            <p onClick={goTop}>CRYPTO</p>
           </Link>
           <ul>
             <li>
@@ -47,18 +44,9 @@ function Navbar() {
               <a href="#market">Market</a>
             </li>
             <li>
-              <a href="#choose-us">Choose Us</a>
-            </li>
-            <li>
-              <a href="#join">Join</a>
+              <a href="#choose-us">Why Us</a>
             </li>
           </ul>
-          <span>
-            <IconBrandTwitter />
-            <IconBrandDiscord />
-            {/* mobile */}
-            <IconMenu2 onClick={openMobile} className="hamburger-menu" />
-          </span>
         </div>
       </nav>
 
@@ -74,9 +62,6 @@ function Navbar() {
           </li>
           <li onClick={openMobile}>
             <a href="#choose-us">Choose Us</a>
-          </li>
-          <li onClick={openMobile}>
-            <a href="#join">Join</a>
           </li>
         </ul>
       </div>

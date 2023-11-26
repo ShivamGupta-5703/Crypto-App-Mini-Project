@@ -23,6 +23,7 @@ function Hero() {
           throw new Error("Error!");
         }
         const jsonData = await response.json();
+        console.log(jsonData);
         setData(jsonData);
       } catch (error) {
         console.error(error);
@@ -43,7 +44,7 @@ function Hero() {
               <img className="btc-float" src={Btc} alt="floating-el" />
               <h1>
                 Track and Trade
-                <br /> <span>Crypto currencies</span>
+                <br /> <span>Crypto</span>
               </h1>
               <img className="eth-float" src={Eth} alt="floating-el" />
             </div>
